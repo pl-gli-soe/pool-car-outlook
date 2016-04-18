@@ -52,7 +52,7 @@ Private Sub przygotuj_content_dla_forma(ByRef moh As AjtemHandler)
             ' To use a different group
             ' msoLanguageIDPolish 1045
             ' Set objGroup = item("Pomieszczenia")
-            Set moh.objGroup = .item("Rooms") ' or Pomieszczenia w zaleznosci od jezyka
+            Set moh.objGroup = .item(G_ROOMS_STR) ' or Pomieszczenia w zaleznosci od jezyka
                 
         End With
         
@@ -103,13 +103,9 @@ Public Sub stworz_nowy_ajtem_na_podstawie_wyboru(wybrana_wartosc As String)
             
             ' To use a different group
             ' msoLanguageIDPolish 1045
-            If CLng(Application.LanguageSettings.LanguageID(msoLanguageIDInstall)) = 1045 Then
-                Set moh.objGroup = .item("Pomieszczenia")
-            Else
             
             
-                Set moh.objGroup = .item("Rooms") ' or Pomieszczenia w zaleznosci od jezyka
-            End If
+            Set moh.objGroup = .item(G_ROOMS_STR) ' or Pomieszczenia w zaleznosci od jezyka
                 
         End With
         
