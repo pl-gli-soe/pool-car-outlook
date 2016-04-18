@@ -18,6 +18,13 @@ Attribute VB_Name = "RoomsModule2"
 ' WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 ' OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+' version 3.2
+' pomieszczenia a roomy jako zmienna
+
+' version 3.1
+
+' dodane km start i stop
+
 ' version 3.0
 ' dodawanie nowego ajtemu z gotowym textem.
 ' nowe moduly i nowe typy wbudowane
@@ -74,7 +81,7 @@ Public Sub iSelectCalendars(dod As Date, ddo As Date)
     
            ' To use a different group
            ' Set objGroup = item("Pomieszczenia")
-            Set oh.objGroup = .item("Rooms") ' or Pomieszczenia w zaleznosci od jezyka
+            Set oh.objGroup = .item(G_ROOMS_STR) ' or Pomieszczenia w zaleznosci od jezyka
        End With
     
     

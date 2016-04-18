@@ -65,7 +65,7 @@ Sub flatTableGen()
  
         ' To use a different group
         ' Set objGroup = item("Pomieszczenia")
-        Set objGroup = .item("Rooms") ' or Pomieszczenia w zaleznosci od jezyka
+        Set objGroup = .item(G_ROOMS_STR) ' or Pomieszczenia w zaleznosci od jezyka
     End With
  
  

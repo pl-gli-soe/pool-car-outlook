@@ -32,3 +32,6 @@ Global Const G_LBL_TAF = "TAF"
 Global Const G_LBL_KM_START = "Km start"
 Global Const G_LBL_KM_STOP = "Km stop"
 Global Const G_LBL_CMNT = "Dodatkowy komentarz"
+
+
+Global Const G_ROOMS_STR = "Rooms"
